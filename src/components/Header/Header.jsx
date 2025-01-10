@@ -2,6 +2,7 @@ import Logo from "./Logo/Logo";
 import { HeaderContainer, HeaderMain, ButtonsBox } from "./Header.styled";
 import { useState, useEffect } from "react";
 import BurgerBtn from "./BurgerBtn/BurgerBtn";
+import Button from "../Common/Button/Button";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -28,6 +29,7 @@ const Header = () => {
           <Logo />
           <ButtonsBox>
             <BurgerBtn fn={setOpenMenu} />
+            <Button text="Get in touch" link="#contacts" />
           </ButtonsBox>
         </HeaderContainer>
       </HeaderMain>
