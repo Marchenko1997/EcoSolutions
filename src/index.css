@@ -1,3 +1,6 @@
+@import url("./fonts/fonts.css");
+@import "modern-normalize/modern-normalize.css";
+
 :root {
   --hover-effect: 400ms ease;
   --main-bg: #f3f5fa;
