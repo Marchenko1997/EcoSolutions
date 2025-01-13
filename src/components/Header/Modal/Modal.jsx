@@ -34,13 +34,12 @@ const Modal = ({ children, fn }) => {
 
   return (
     <>
-      {createPortal &&
-        ((
-          <Backdrop ref={backdropRef} onClick={handleBackdropClick}>
-            <ModalContainer>{children}</ModalContainer>
-          </Backdrop>
-        ),
-        modalRoot)}
+      {createPortal(
+        <Backdrop ref={backdropRef} onClick={handleBackdropClick}>
+          <ModalContainer>{children}</ModalContainer>
+        </Backdrop>,
+        modalRoot 
+      )}
     </>
   );
 };

@@ -3,6 +3,7 @@ import { HeaderContainer, HeaderMain, ButtonsBox } from "./Header.styled";
 import { useState, useEffect } from "react";
 import BurgerBtn from "./BurgerBtn/BurgerBtn";
 import Button from "../Common/Button/Button";
+import MobileMenu from "./MobileMenu/MobileMenu";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -33,6 +34,7 @@ const Header = () => {
           </ButtonsBox>
         </HeaderContainer>
       </HeaderMain>
+      {openMenu && <MobileMenu fn={setOpenMenu} />}
     </>
   );
 };

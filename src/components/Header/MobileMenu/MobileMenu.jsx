@@ -1,7 +1,9 @@
+
 import Modal from "../Modal/Modal";
-import { BtnBox, CloseBtn, SocialMediaBox } from "./MobileMenu.styled";
-import sprite from "../../../images/icons.svg";
 import Menu from "../Menu/Menu";
+import SocialMedia from "../../Common/SocialMedia/SocialMedia";
+import sprite from "../../../images/icons.svg";
+import { BtnBox, CloseBtn, SocialMediaBox } from "./MobileMenu.styled";
 
 const MobileMenu = ({ fn }) => {
   return (
@@ -13,8 +15,11 @@ const MobileMenu = ({ fn }) => {
           </svg>
           close
         </CloseBtn>
-        <Menu fn={fn} />
       </BtnBox>
+      <Menu fn={fn} />
+      <SocialMediaBox>
+        <SocialMedia />
+      </SocialMediaBox>
     </Modal>
   );
 };

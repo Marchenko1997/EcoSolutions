@@ -1,7 +1,7 @@
-import { NavList } from "./Menu.styled";
-import { links } from "../../../data/menu.js";
 import { Link } from "react-scroll";
+import { links } from "../../../data/menu";
 import sprite from "../../../images/icons.svg";
+import { NavList } from "./Menu.styled";
 
 const Menu = ({ fn }) => {
   return (
@@ -18,9 +18,11 @@ const Menu = ({ fn }) => {
           onClick={() => fn(false)}
         >
           {link.title}
-          <svg width={16} height={16}>
-            <use xlinkHref={`${sprite}#icon-btn-arrow-down`}></use>
-          </svg>
+          <span>
+            <svg width={16} height={16}>
+              <use xlinkHref={`${sprite}#icon-arrow-menu`}></use>
+            </svg>
+          </span>
         </Link>
       ))}
     </NavList>
