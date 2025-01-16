@@ -1,9 +1,9 @@
+import  { useState, useEffect } from "react";
 import Logo from "./Logo/Logo";
-import { HeaderContainer, HeaderMain, ButtonsBox } from "./Header.styled";
-import { useState, useEffect } from "react";
 import BurgerBtn from "./BurgerBtn/BurgerBtn";
-import Button from "../Common/Button/Button";
 import MobileMenu from "./MobileMenu/MobileMenu";
+import Button from "../Common/Button/Button";
+import { HeaderMain, HeaderContainer, ButtonsBox } from "./Header.styled";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -23,6 +23,7 @@ const Header = () => {
       document.removeEventListener("scroll", handleScroll);
     };
   }, [scrolled]);
+
   return (
     <>
       <HeaderMain data-scrolled={scrolled}>
