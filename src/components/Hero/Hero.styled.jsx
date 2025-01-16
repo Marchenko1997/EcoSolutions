@@ -53,3 +53,10 @@ export const ContentHero = styled.div`
     }
   }
 `;
+
+export const TextContainer = styled.div`
+  @media screen and (min-width: 1280px) {
+    min-width: 363px;
+    margin-right: 96px;
+  }
+`;
