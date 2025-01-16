@@ -3,6 +3,7 @@ import { SectionHero, ContentHero, TextContainer } from "./Hero.styled";
 import TextHero from "./TextHero/TextHero.jsx";
 import LearnMoreBtn from "./LearnMoreBtn/LearnMoreBtn.jsx";
 import AdressInfo from "./AdressInfo/AdressInfo.jsx";
+import HeroImage from "./HeroImage/HeroImage.jsx";
 
 const Hero = () => {
   const variants = {
@@ -32,6 +33,7 @@ const Hero = () => {
         </TextContainer>
       </ContentHero>
       <AdressInfo />
+      <HeroImage />
     </SectionHero>
   );
 };
