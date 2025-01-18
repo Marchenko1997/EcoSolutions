@@ -1,6 +1,7 @@
 import TitleValues from "./TitleValues/TitleValues";
 import TextValues from "./TextValues/TextValues";
 import { Section, TextContainer, TitleContainer } from "./MainValues.styled";
+import ListValues from "./ListValues/ListValues";
 
 const MainValues = () => {
   const variants = {
@@ -27,7 +28,8 @@ const MainValues = () => {
         <TextContainer>
           <TextValues />
         </TextContainer>
-      </TitleContainer>
+          </TitleContainer>
+          <ListValues />
     </Section>
   );
 };
