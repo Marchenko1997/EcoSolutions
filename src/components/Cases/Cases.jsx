@@ -1,5 +1,6 @@
 import TitleCases from "./TitleCases/TitleCases";
 import { Section } from "./Cases.styled";
+import MySlider from "./MySlider/MySlider";
 
 const Cases = () => {
   const variants = {
@@ -22,6 +23,7 @@ const Cases = () => {
       viewport={{ once: true }}
     >
       <TitleCases />
+      <MySlider />
     </Section>
   );
 };
