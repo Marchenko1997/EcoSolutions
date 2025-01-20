@@ -1,9 +1,11 @@
-import React from 'react'
+import ArrowPrev from "./ArrowPrev/ArrowPrev";
+import ArrowNext from "./ArrowNext/ArrowNext";
 
 const MySlider = () => {
-  return (
-    <div>MySlider</div>
-  )
-}
+    return <div>
+    <ArrowPrev />
+    <ArrowNext />
+  </div>;
+};
 
-export default MySlider
+export default MySlider;
