@@ -22,8 +22,10 @@ const Cases = () => {
       whileInView="show"
       viewport={{ once: true }}
     >
-      <TitleCases />
-      <MySlider />
+      <div>
+        <TitleCases />
+        <MySlider />
+      </div>
     </Section>
   );
 };
