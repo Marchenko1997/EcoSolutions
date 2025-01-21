@@ -8,6 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { SliderContainer, StyledSlide } from "./MySlider.styled";
 import { useMediaQuery } from "react-responsive";
 import { useState } from "react";
+import CurrentShowSlide from "../CurrentShowSlide/CurrentShowSlide";
 
 const MySlider = () => {
   const isTablet = useMediaQuery({ minWidth: 768 });
@@ -47,6 +48,7 @@ const MySlider = () => {
           </StyledSlide>
         ))}
       </Slider>
+      <CurrentShowSlide currentSlide={currentSlide}/>
     </SliderContainer>
   );
 };
