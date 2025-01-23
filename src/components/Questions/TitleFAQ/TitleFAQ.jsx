@@ -1,9 +1,12 @@
-import React from 'react'
+import { TitleContainer } from "./TitleFAQ.styled"
+import Title from "../../Common/Title/Title"
 
 const TitleFAQ = () => {
   return (
-    <div>TitleFAQ</div>
-  )
+    <TitleContainer>
+      <Title>Frequently ask questions</Title>
+    </TitleContainer>
+  );
 }
 
 export default TitleFAQ

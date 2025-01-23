@@ -1,9 +1,14 @@
-import React from 'react'
+import TitleFAQ from "./TitleFAQ/TitleFAQ"
+import {Section, FlexContainer} from "./Questions.styled"
 
 const Questions = () => {
   return (
-    <div>Questions</div>
-  )
+    <Section>
+      <FlexContainer>
+        <TitleFAQ />
+      </FlexContainer>
+    </Section>
+  );
 }
 
 export default Questions

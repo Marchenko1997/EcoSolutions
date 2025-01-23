@@ -5,6 +5,7 @@ import Hero from "./components/Hero/Hero"
 import MainValues from "./components/MainValues/MainValues";
 import Electricity from "./components/Electricity/Electricity";
 import Cases from "./components/Cases/Cases";
+import Questions from "./components/Questions/Questions";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <MainValues />
           <Electricity />
           <Cases />
+          <Questions/>
         </Container>
       </main>
     </>
