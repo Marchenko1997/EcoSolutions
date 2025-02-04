@@ -8,6 +8,8 @@ import Cases from "./components/Cases/Cases";
 import Questions from "./components/Questions/Questions";
 import ContactUs from "./components/ContactUs/ContactUs";
 import Footer from "./components/Footer/Footer";
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from "react-toastify";
 
 function App() {
   return (
@@ -24,6 +26,7 @@ function App() {
         </Container>
       </main>
       <Footer />
+      <ToastContainer />
     </>
   );
 }
