@@ -1,9 +1,11 @@
 import LogoFooter from "./LogoFooter/LogoFooter"
+import SocialFooter from "./SocialFooter/SocialFooter"
 
 const Footer = () => {
   return (
       <div>
-        <LogoFooter />
+          <LogoFooter />
+          <SocialFooter />
     </div>
   )
 }
